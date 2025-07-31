@@ -100,7 +100,7 @@ export default function ContactPage() {
                                         className="flex items-center text-text hover:text-primary transition-colors"
                                     >
                                         <span className="text-xl mr-3">🎵</span>
-                                        <span>@colton_mcmurdie_music</span>
+                                        <span>@cjmcmurdie</span>
                                     </a>
                                     <a
                                         href="https://www.instagram.com/colton_mcmurdie"

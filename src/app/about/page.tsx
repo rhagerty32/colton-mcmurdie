@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout';
 import { Music, Heart, Star, Award } from 'lucide-react';
+import Image from 'next/image';
 
 export default function AboutPage() {
     return (
@@ -19,11 +20,13 @@ export default function AboutPage() {
                         </div>
                         <div className="relative">
                             <div className="aspect-[4/5] bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center shadow-lg">
-                                <div className="text-center text-primary/60 p-8">
-                                    <div className="text-6xl mb-4">🤠</div>
-                                    <p className="text-lg font-semibold">Professional Photo</p>
-                                    <p className="text-sm">Colton McMurdie</p>
-                                </div>
+                                <Image
+                                    src={'https://cdn.spotparking.app/public/misc/colton/blueShirt.JPEG'}
+                                    alt={`Gold Buckles Cover`}
+                                    width={800}
+                                    height={800}
+                                    className="object-cover rounded-lg z-10"
+                                />
                             </div>
                         </div>
                     </div>
@@ -35,23 +38,21 @@ export default function AboutPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="prose prose-lg max-w-none">
                         <p className="text-lg text-text/80 mb-6 leading-relaxed">
-                            Born and raised with deep western values, Colton McMurdie represents the authentic voice
-                            of modern country music. His journey began in the heartland of America, where he developed
+                            Born and raised with deep western values, I strive to represent the authentic voice
+                            of modern country music. My journey began in the heartland of America, where I developed
                             a profound appreciation for the stories and traditions that define the western way of life.
                         </p>
 
                         <p className="text-lg text-text/80 mb-6 leading-relaxed">
-                            Colton&apos;s music is deeply rooted in real experiences - from ranch life to rodeo arenas,
-                            each song tells a story that resonates with anyone who values hard work, integrity, and
-                            the pursuit of dreams. His authentic approach to songwriting draws from personal experiences
-                            and the rich tapestry of western culture.
+                            In 2017, at just 17 years old, I was involved in a rollover car accident that resulted in the loss of use of my legs. Refusing to let this define me, I dedicated myself to rehabilitation and, within a year, was back in the saddle—riding horses and team roping once again. My determination also led me to attend auctioneering school and become an auctioneer.
+                        </p>
+
+                        <p className="text-lg text-text/80 mb-6 leading-relaxed">
+                            I taught myself how to play the guitar, building on a lifelong love of singing that began in my childhood. My music is deeply rooted in real experiences—from ranch life to rodeo arenas, each song tells a story that resonates with anyone who values hard work, integrity, and the pursuit of dreams. My authentic approach to songwriting draws from personal experiences and the rich tapestry of western culture.
                         </p>
 
                         <p className="text-lg text-text/80 mb-8 leading-relaxed">
-                            With influences ranging from classic country legends to contemporary artists, Colton has
-                            developed a sound that honors tradition while speaking to today&apos;s audiences. His commitment
-                            to authenticity and musical craftsmanship has earned him a growing fanbase who appreciate
-                            genuine storytelling and heartfelt performances.
+                            With influences ranging from classic country legends to contemporary artists, I have developed a sound that honors tradition while speaking to today’s audiences. My commitment to authenticity and musical craftsmanship has earned me a growing fanbase who appreciate genuine storytelling and heartfelt performances. I hope you enjoy my music and invite you to follow along on social media using the links below.
                         </p>
                     </div>
                 </div>
@@ -117,12 +118,14 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1">
-                            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center shadow-lg">
-                                <div className="text-center text-primary/60 p-8">
-                                    <div className="text-5xl mb-4">🎸</div>
-                                    <p className="text-lg font-semibold">Performance Photo</p>
-                                    <p className="text-sm">Live in concert</p>
-                                </div>
+                            <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center shadow-lg">
+                                <Image
+                                    src={'https://cdn.spotparking.app/public/misc/colton/guitar.jpeg'}
+                                    alt={`Gold Buckles Cover`}
+                                    width={800}
+                                    height={800}
+                                    className="object-cover rounded-lg z-10"
+                                />
                             </div>
                         </div>
 
@@ -167,7 +170,7 @@ export default function AboutPage() {
                             href="https://www.tiktok.com/@cjmcmurdie"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-accent text-text px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                            className="bg-transparent border-2 border-secondary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-primary transition-colors"
                         >
                             Follow on TikTok
                         </a>

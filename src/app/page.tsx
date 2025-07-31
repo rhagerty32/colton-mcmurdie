@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
 import StreamingPlatforms from '@/components/StreamingPlatforms';
+import Image from 'next/image';
 
 export default function Home() {
     return (
@@ -34,11 +35,16 @@ export default function Home() {
                             </a>
                         </div>
                         <div className="relative">
-                            <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                                <p className="text-primary/60 text-center p-8">
-                                    [Artist Photo Placeholder]<br />
-                                    Professional country/western photo of Colton
-                                </p>
+                            <div className="order-2 lg:order-1">
+                                <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center shadow-lg">
+                                    <Image
+                                        src={'https://cdn.spotparking.app/public/misc/colton/guitar.jpeg'}
+                                        alt={`Gold Buckles Cover`}
+                                        width={800}
+                                        height={800}
+                                        className="object-cover rounded-lg z-10"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

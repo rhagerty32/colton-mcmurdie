@@ -1,21 +1,7 @@
 import Layout from '@/components/Layout';
-import { Calendar, MapPin, Clock, ExternalLink, Music } from 'lucide-react';
+import { Music } from 'lucide-react';
 
 export default function TourPage() {
-    const upcomingShows = [
-        {
-            date: "2025-05-24",
-            title: "Concert & Bull Riding Event",
-            venue: "Goodyear Event Center",
-            location: "16644 W Hilton Ave, Goodyear, AZ 85338",
-            time: "7:30 PM",
-            description: "Concert followed by bull riding - bring a chair!",
-            ticketUrl: "#", // Placeholder
-            type: "Special Event",
-            featured: true
-        }
-        // Add more shows as they become available
-    ];
 
     const formatDate = (dateString: string) => {
         const date = new Date(dateString);
@@ -48,7 +34,7 @@ export default function TourPage() {
                         Upcoming Shows
                     </h2>
 
-                    {upcomingShows.length > 0 ? (
+                    {/* {upcomingShows.length > 0 ? (
                         <div className="space-y-6">
                             {upcomingShows.map((show, index) => (
                                 <div
@@ -64,7 +50,6 @@ export default function TourPage() {
 
                                     <div className="p-6 lg:p-8">
                                         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-center">
-                                            {/* Date */}
                                             <div className="text-center lg:text-left">
                                                 <div className="flex items-center justify-center lg:justify-start text-primary mb-2">
                                                     <Calendar className="w-5 h-5 mr-2" />
@@ -79,7 +64,6 @@ export default function TourPage() {
                                                 </div>
                                             </div>
 
-                                            {/* Event Details */}
                                             <div className="lg:col-span-2">
                                                 <div className="flex items-center gap-2 mb-2">
                                                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
@@ -101,7 +85,6 @@ export default function TourPage() {
                                                 )}
                                             </div>
 
-                                            {/* Action Button */}
                                             <div className="text-center lg:text-right">
                                                 <a
                                                     href={show.ticketUrl}
@@ -116,15 +99,15 @@ export default function TourPage() {
                                 </div>
                             ))}
                         </div>
-                    ) : (
-                        <div className="text-center py-12">
-                            <Music className="w-16 h-16 text-primary/30 mx-auto mb-4" />
-                            <h3 className="text-xl font-semibold text-text mb-2">No Shows Scheduled</h3>
-                            <p className="text-text/60 mb-6">
-                                Check back soon for upcoming tour dates and special events.
-                            </p>
-                        </div>
-                    )}
+                    ) : ( */}
+                    <div className="text-center py-12">
+                        <Music className="w-16 h-16 text-primary/30 mx-auto mb-4" />
+                        <h3 className="text-xl font-semibold text-text mb-2">No Shows Scheduled</h3>
+                        <p className="text-text/60 mb-6">
+                            Check back soon for upcoming tour dates and special events.
+                        </p>
+                    </div>
+                    {/* )} */}
                 </div>
             </section>
 

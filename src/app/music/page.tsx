@@ -8,9 +8,9 @@ export default function MusicPage() {
         {
             title: "Gold Buckles",
             type: "Single",
-            releaseDate: "2024",
+            releaseDate: "2025",
             description: "A powerful anthem about perseverance and the pursuit of excellence, inspired by the rodeo lifestyle.",
-            imageUrl: "https://cdn.spotparking.app/public/misc/gold_buckles.png", // Placeholder
+            imageUrl: "https://cdn.spotparking.app/public/misc/colton/gold_buckles.png", // Placeholder
             isLatest: true
         },
     ];
@@ -57,7 +57,7 @@ export default function MusicPage() {
 
                                     <div className="flex items-center text-text/60 mb-6">
                                         <Calendar className="w-4 h-4 mr-2" />
-                                        Released {release.releaseDate}
+                                        To be released {release.releaseDate}
                                     </div>
 
                                     <p className="text-lg text-text/80 mb-8 leading-relaxed">
@@ -67,7 +67,7 @@ export default function MusicPage() {
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <button className="inline-flex items-center bg-primary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition hover:-translate-y-[2px] hover:shadow-lg cursor-pointer">
                                             <Play className="w-5 h-5 mr-2" />
-                                            Pre-add Now
+                                            Pre-save Now
                                         </button>
                                         <a
                                             href="#streaming-platforms"
