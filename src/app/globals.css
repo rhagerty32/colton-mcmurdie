@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --primary: #CC0000;
+    --secondary: #F5F5DC;
+    --accent: #000000;
+    --background: #FFFFFF;
+    --text: #000000;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.font-western {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.border {
+    border-color: #eee;
+}
+
+.font-script {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.font-body {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.text-text {
+    color: var(--text);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.bg-background {
+    background-color: var(--background);
+}
+
+.border-primary {
+    border-color: var(--primary);
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }
