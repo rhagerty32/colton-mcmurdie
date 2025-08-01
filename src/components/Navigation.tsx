@@ -22,7 +22,7 @@ export default function Navigation() {
                     {/* Logo */}
                     <Link href="/" className="flex-shrink-0">
                         <span className="font-western text-2xl font-black text-accent tracking-wider">
-                            COLTON
+                            COLTON MCMURDIE
                         </span>
                     </Link>
 

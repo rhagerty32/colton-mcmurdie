@@ -38,21 +38,20 @@ export default function AboutPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="prose prose-lg max-w-none">
                         <p className="text-lg text-text/80 mb-6 leading-relaxed">
-                            Born and raised with deep western values, I strive to represent the authentic voice
-                            of modern country music. My journey began in the heartland of America, where I developed
-                            a profound appreciation for the stories and traditions that define the western way of life.
+                            Born and raised a sixth-generation Arizonan, Colton McMurdie is a true embodiment of grit, heart, and western heritage. A singer and songwriter with deep country roots, Colton brings stories to life through authentic lyrics, rugged vocals, and a passion that reflects his love for the land, the people, and the rodeo way of life.
                         </p>
 
                         <p className="text-lg text-text/80 mb-6 leading-relaxed">
-                            In 2017, at just 17 years old, I was involved in a rollover car accident that resulted in the loss of use of my legs. Refusing to let this define me, I dedicated myself to rehabilitation and, within a year, was back in the saddle—riding horses and team roping once again. My determination also led me to attend auctioneering school and become an auctioneer.
+                            Colton isn&apos;t just a musician—he&apos;s the voice of the arena and the heartbeat of the western lifestyle. As a professional auctioneer and rodeo announcer, he&apos;s spent years bringing energy and excitement to events across the Southwest, always staying close to the dirt, the dust, and the spirit of the sport.
                         </p>
 
                         <p className="text-lg text-text/80 mb-6 leading-relaxed">
-                            I taught myself how to play the guitar, building on a lifelong love of singing that began in my childhood. My music is deeply rooted in real experiences—from ranch life to rodeo arenas, each song tells a story that resonates with anyone who values hard work, integrity, and the pursuit of dreams. My authentic approach to songwriting draws from personal experiences and the rich tapestry of western culture.
+                            But Colton&apos;s story goes even deeper. After facing life-changing paralysis from a car accident, he refused to hang up his spurs. He continues to compete and contribute to the rodeo community, proving that resilience runs deep and that passion doesn&apos;t fade with adversity—it grows stronger.
+                            With every performance, Colton seeks to honor the legacy of Chris LeDoux—a man who lived for the ride, sang from the soul, and stood as a symbol of what it means to be cowboy to the core. Like Chris LeDoux, Colton lives where music, rodeo, and authenticity meet—and he&apos;s carving his own trail while staying true to what built him.
                         </p>
 
                         <p className="text-lg text-text/80 mb-8 leading-relaxed">
-                            With influences ranging from classic country legends to contemporary artists, I have developed a sound that honors tradition while speaking to today’s audiences. My commitment to authenticity and musical craftsmanship has earned me a growing fanbase who appreciate genuine storytelling and heartfelt performances. I hope you enjoy my music and invite you to follow along on social media using the links below.
+                            Whether he&apos;s behind a microphone, on a stage, or in the arena, Colton McMurdie is here to represent the real West—unfiltered, unbroken, and undeniably original.
                         </p>
                     </div>
                 </div>
