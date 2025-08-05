@@ -11,37 +11,37 @@ interface Platform {
 const platforms: Platform[] = [
     {
         name: 'Spotify',
-        url: 'https://open.spotify.com/artist/colton-mcmurdie',
+        url: 'http://vyd.co/GoldBuckles',
         color: 'bg-[#1DB954]',
         icon: '🎵'
     },
     {
         name: 'Apple Music',
-        url: 'https://music.apple.com/artist/colton-mcmurdie',
+        url: 'http://vyd.co/GoldBuckles',
         color: 'bg-[#FA57C1]',
         icon: '🎶'
     },
     {
         name: 'YouTube Music',
-        url: 'https://www.youtube.com/watch?v=uyS3qRMAHKw&list=RDuyS3qRMAHKw&start_radio=1',
+        url: 'http://vyd.co/GoldBuckles',
         color: 'bg-[#FF0000]',
         icon: '📺'
     },
     {
         name: 'Amazon Music',
-        url: 'https://music.amazon.com/artists/colton-mcmurdie',
+        url: 'http://vyd.co/GoldBuckles',
         color: 'bg-[#FF9900]',
         icon: '🛒'
     },
     {
         name: 'Pandora',
-        url: 'https://www.pandora.com/artist/colton-mcmurdie',
+        url: 'http://vyd.co/GoldBuckles',
         color: 'bg-[#005483]',
         icon: '📻'
     },
     {
         name: 'SoundCloud',
-        url: 'https://soundcloud.com/colton-mcmurdie',
+        url: 'http://vyd.co/GoldBuckles',
         color: 'bg-[#FF3300]',
         icon: '☁️'
     }

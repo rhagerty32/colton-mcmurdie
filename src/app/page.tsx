@@ -20,7 +20,7 @@ export default function Home() {
                             <p className="text-lg text-text/80 mb-6 leading-relaxed">
                                 Born and raised with western values, Colton McMurdie brings authentic country music
                                 that tells real stories from the heart of America. From rodeo arenas to concert halls,
-                                his music captures the spirit of the modern cowboy lifestyle.
+                                his music captures the spirit of the western cowboy lifestyle.
                             </p>
                             <p className="text-lg text-text/80 mb-8 leading-relaxed">
                                 With influences ranging from classic country legends to contemporary artists,

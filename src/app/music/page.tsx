@@ -8,8 +8,8 @@ export default function MusicPage() {
         {
             title: "Gold Buckles",
             type: "Single",
-            releaseDate: "2025",
-            description: "A powerful anthem about perseverance and the pursuit of excellence, inspired by the rodeo lifestyle.",
+            releaseDate: "August 29, 2025",
+            description: "A powerful song about perseverance, inspired by the rodeo lifestyle.",
             imageUrl: "https://cdn.spotparking.app/public/misc/colton/gold_buckles.png", // Placeholder
             isLatest: true
         },

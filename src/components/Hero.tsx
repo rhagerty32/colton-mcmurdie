@@ -28,7 +28,7 @@ export default function Hero() {
                     {/* Featured Event - Match the promo design */}
                     <div className="bg-primary text-white p-8 mb-8 max-w-2xl mx-auto transform -skew-y-1">
                         <h3 className="font-western text-4xl md:text-6xl font-black mb-4 leading-none">
-                            8/29/24
+                            8/25/24
                         </h3>
                         <h4 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">NEW SONG RELEASE</h4>
                         <p className="text-sm md:text-base mb-4 uppercase tracking-wider">
