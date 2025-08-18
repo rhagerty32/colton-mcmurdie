@@ -60,11 +60,11 @@ export default function Hero() {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-4 lg:bottom-10 hidden lg:block left-1/2 transform -translate-x-1/2 animate-bounce">
+            {/* <div className="absolute bottom-4 lg:bottom-10 hidden lg:block left-1/2 transform -translate-x-1/2 animate-bounce">
                 <div className="w-6 h-10 border-2 border-accent/50 rounded-full flex justify-center">
                     <div className="w-1 h-3 bg-accent/50 rounded-full mt-2"></div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }

@@ -3,8 +3,12 @@
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Music, Calendar, Heart } from 'lucide-react';
+import { toast, Toaster } from 'sonner';
+import { EmailContent } from './EmailContent';
+import { ConfirmationEmailContent } from './ConfirmationEmail';
 
 export default function ContactPage() {
+    const url = process.env.NEXT_PUBLIC_API_URL;
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -13,11 +17,68 @@ export default function ContactPage() {
         inquiryType: 'general'
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission here - integrate with your preferred email service
-        console.log('Form submitted:', formData);
-        alert('Thank you for your message! I\'ll get back to you soon.');
+
+        if (!url) return;
+
+        const toastId = toast.loading('Sending...')
+        const emailHtml1 = EmailContent({
+            email: formData.email,
+            inquiryType: formData.inquiryType,
+            message: formData.message,
+            name: formData.name,
+            subject: formData.subject
+        })
+
+        const payload1 = {
+            sender: "management@coltonmcmurdie.com",
+            recipient: "management@coltonmcmurdie.com",
+            subject: 'New Contact Form Submission',
+            body: emailHtml1
+        }
+
+        const response1 = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload1)
+        });
+
+        if (response1.status !== 200) {
+            toast.error('There was an error sending your message. Please try again later.', { id: toastId });
+            return;
+        };
+
+        const emailHtml2 = ConfirmationEmailContent({
+            name: formData.name
+        });
+
+        const payload2 = {
+            sender: "management@coltonmcmurdie.com",
+            recipient: formData.email,
+            subject: 'Confirmation: Your Message Has Been Received',
+            body: emailHtml2
+        };
+
+        const response2 = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload2)
+        });
+
+        if (response2.status !== 200) {
+            toast.error('There was an error sending your confirmation email. Please try again later.', { id: toastId });
+            return;
+        }
+
+        toast.success('Your message has been sent successfully!', { id: toastId });
+        setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            inquiryType: 'general'
+        });
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -209,7 +270,7 @@ export default function ContactPage() {
 
                                     <button
                                         type="submit"
-                                        className="w-full bg-primary text-secondary py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                                        className="w-full bg-primary text-secondary py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors cursor-pointer"
                                     >
                                         Send Message
                                     </button>
@@ -243,6 +304,7 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
+            <Toaster />
         </Layout>
     );
 }
