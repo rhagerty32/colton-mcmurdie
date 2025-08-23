@@ -42,7 +42,7 @@ export default function Hero() {
                     {/* Call to Action */}
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                         <Link
-                            href="/music"
+                            href="http://vyd.co/GoldBuckles"
                             className="inline-flex items-center justify-center bg-accent text-white px-6 sm:px-8 py-3 sm:py-4 font-bold uppercase tracking-wide hover:bg-accent/90 transition hover:-translate-y-[2px] hover:shadow-lg text-sm sm:text-base"
                         >
                             <Play className="w-5 h-5 mr-2" />

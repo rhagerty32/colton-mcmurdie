@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import StreamingPlatforms from '@/components/StreamingPlatforms';
 import { Play, Calendar } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function MusicPage() {
     const releases = [
@@ -65,10 +66,10 @@ export default function MusicPage() {
                                     </p>
 
                                     <div className="flex flex-col sm:flex-row gap-4">
-                                        <button className="inline-flex items-center bg-primary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition hover:-translate-y-[2px] hover:shadow-lg cursor-pointer">
+                                        <Link href={'http://vyd.co/GoldBuckles'} className="inline-flex items-center bg-primary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition hover:-translate-y-[2px] hover:shadow-lg cursor-pointer">
                                             <Play className="w-5 h-5 mr-2" />
                                             Pre-save Now
-                                        </button>
+                                        </Link>
                                         <a
                                             href="#streaming-platforms"
                                             className="inline-flex items-center bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-secondary transition hover:-translate-y-[2px] hover:shadow-lg text-center cursor-pointer"
