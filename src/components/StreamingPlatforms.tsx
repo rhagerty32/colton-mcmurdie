@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
 
 interface Platform {
@@ -62,7 +61,7 @@ export default function StreamingPlatforms() {
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                     {platforms.map((platform) => (
-                        <Link
+                        <a
                             key={platform.name}
                             href={platform.url}
                             target="_blank"
@@ -74,7 +73,7 @@ export default function StreamingPlatforms() {
                                 {platform.name}
                             </h3>
                             <ExternalLink className="w-4 h-4 mx-auto mt-2 text-text/50 group-hover:text-primary transition-colors" />
-                        </Link>
+                        </a>
                     ))}
                 </div>
             </div>

@@ -3,11 +3,19 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import { Route } from 'next';
+
+type NavItem = {
+    href: Route;
+    label: string;
+};
+
+type NavItems = NavItem[];
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const navItems = [
+    const navItems: NavItems = [
         { href: '/', label: 'Home' },
         { href: '/music', label: 'Music' },
         { href: '/tour', label: 'Tour' },
