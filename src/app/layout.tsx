@@ -35,6 +35,19 @@ export default function RootLayout({
                 `
                     }}
                 />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRM5PKH9LL"></script>
+                <script
+                    type="text/javascript"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+
+                            gtag('config', 'G-PRM5PKH9LL');
+                        `
+                    }}
+                />
             </head>
             <body
                 className={`${inter.variable} font-body bg-background text-text antialiased`}
