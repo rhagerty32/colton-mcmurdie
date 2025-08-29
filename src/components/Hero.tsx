@@ -32,7 +32,7 @@ export default function Hero() {
                         </h3>
                         <h4 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2 uppercase tracking-wide">NEW SONG RELEASE</h4>
                         <p className="text-xs sm:text-sm md:text-base uppercase tracking-wider">
-                            &quot;Gold Buckles&quot; • Available Everywhere August 29th
+                            &quot;Gold Buckles&quot; • Available Everywhere
                         </p>
                     </div>
 
