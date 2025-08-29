@@ -58,7 +58,7 @@ export default function MusicPage() {
 
                                     <div className="flex items-center text-text/60 mb-6">
                                         <Calendar className="w-4 h-4 mr-2" />
-                                        To be released {release.releaseDate}
+                                        Released {release.releaseDate}
                                     </div>
 
                                     <p className="text-lg text-text/80 mb-8 leading-relaxed">
@@ -68,7 +68,7 @@ export default function MusicPage() {
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <Link href={'http://vyd.co/GoldBuckles'} className="inline-flex items-center bg-primary text-secondary px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition hover:-translate-y-[2px] hover:shadow-lg cursor-pointer">
                                             <Play className="w-5 h-5 mr-2" />
-                                            Pre-save Now
+                                            Listen Now
                                         </Link>
                                         <a
                                             href="#streaming-platforms"

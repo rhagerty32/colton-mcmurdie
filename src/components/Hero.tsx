@@ -31,11 +31,8 @@ export default function Hero() {
                             8/29/25
                         </h3>
                         <h4 className="text-lg sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2 uppercase tracking-wide">NEW SONG RELEASE</h4>
-                        <p className="text-xs sm:text-sm md:text-base mb-2 sm:mb-4 uppercase tracking-wider">
+                        <p className="text-xs sm:text-sm md:text-base uppercase tracking-wider">
                             &quot;Gold Buckles&quot; • Available Everywhere August 29th
-                        </p>
-                        <p className="text-xs md:text-sm opacity-90">
-                            Mark your calendar and follow for updates!
                         </p>
                     </div>
 
@@ -46,15 +43,15 @@ export default function Hero() {
                             className="inline-flex items-center justify-center bg-accent text-white px-6 sm:px-8 py-3 sm:py-4 font-bold uppercase tracking-wide hover:bg-accent/90 transition hover:-translate-y-[2px] hover:shadow-lg text-sm sm:text-base"
                         >
                             <Play className="w-5 h-5 mr-2" />
-                            Pre-save Now
+                            Listen Now
                         </Link>
-                        <Link
+                        {/* <Link
                             href="/tour"
                             className="inline-flex items-center justify-center bg-transparent border-2 border-accent text-accent px-6 sm:px-8 py-3 sm:py-4 font-bold uppercase tracking-wide hover:bg-accent hover:text-white transition hover:-translate-y-[2px] hover:shadow-lg text-sm sm:text-base"
                         >
                             <Calendar className="w-4 h-4 mr-2" />
                             Tour Dates
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>
